@@ -1,0 +1,18 @@
+[project]
+name = "my-fastapi-app"
+version = "0.0.0"
+description = "A simple FastAPI app"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+]
+
+[tool.semantic_release]
+version_toml = ["pyproject.toml:project.version"]
+branch = "main"
+changelog_file = "CHANGELOG.md"
+build_command = ""
+
+[tool.semantic_release.remote.token]
+env = "GH_TOKEN"

@@ -11,7 +11,7 @@ A simple REST API built with FastAPI.
 ## Setup
 
 ```bash
-pip install fastapi uvicorn
+pip install .
 ```
 
 ## Run
